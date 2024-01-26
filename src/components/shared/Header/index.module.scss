@@ -1,0 +1,46 @@
+.wrapper {
+    .banner {
+        background-color: var(--secondary-color);
+        text-align: center;
+        font-weight: 600;
+        padding: 0.3rem 0;
+    }
+    
+    .main {
+        background-color: var(--primary-color);
+        
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            
+            .logo {
+                width: 12rem;
+            }
+        
+            .links {
+                display: flex;
+                gap: 1rem;
+                font-weight: 600;
+        
+                * {
+                    color: var(--light-text);
+                    transition: all .3s;
+                }
+
+                *:hover {
+                    color: var(--secondary-color);
+
+                }
+
+                .active {
+                    color: var(--secondary-color);
+                }
+
+            }
+        }
+    }
+}

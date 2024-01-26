@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #fff;
+    padding: 1rem;
+    color: var(--dark-text);
+    transition: all .3s;
+
+
+    img  {
+        height: auto;
+    }
+    
+    &:hover  {
+        transform: scale(102%);
+        box-shadow: 0 0 10px -6px rgb(168, 168, 168);
+    }
+
+    p:first-of-type {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    p:nth-of-type(2) {
+        font-weight: 200;
+        overflow: hidden;
+        max-height: 2.5rem;
+    }
+}
