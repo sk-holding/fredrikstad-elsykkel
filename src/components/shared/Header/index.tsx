@@ -8,6 +8,7 @@ const navLinks = [
   { name: "Våre sykler", href: "/vare-sykler" },
   { name: "Om oss", href: "/om-oss" },
   { name: "Butikker", href: "/butikker" },
+  { name: "Verksted", href: "/verksted" },
 ];
 
 const Header = () => {
