@@ -6,9 +6,10 @@ import styles from "./index.module.scss";
 
 const navLinks = [
   { name: "Våre sykler", href: "/vare-sykler" },
-  { name: "Om oss", href: "/om-oss" },
-  { name: "Butikker", href: "/butikker" },
+  { name: "Butikk", href: "/butikk" },
   { name: "Verksted", href: "/verksted" },
+  { name: "Om oss", href: "/om-oss" },
+  { name: "Kontakt", href: "/kontakt-oss" },
 ];
 
 const Header = () => {

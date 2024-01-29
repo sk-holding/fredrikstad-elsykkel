@@ -22,6 +22,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--secondary-color);
 }
 
 p {
@@ -54,9 +55,11 @@ img {
     margin: 4rem 0;
     
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: var(--gray-text);
         font-weight: 400;
+        max-width: 35rem;
+        text-align: center;
     }
 }
 
@@ -66,7 +69,7 @@ img {
 
 .button {
     padding: 0.8rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     border: none;

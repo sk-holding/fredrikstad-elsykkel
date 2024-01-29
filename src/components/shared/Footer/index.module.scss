@@ -12,7 +12,8 @@
         align-items: center;
         text-align: center;
         gap: 2rem;
-        max-width: 30rem;
+        font-size: 0.9rem;
+        max-width: 35rem;
     }
 
     img {
@@ -37,6 +38,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0.5rem 0;
+        font-size: 0.8rem;
 
         ul {
             display: flex;

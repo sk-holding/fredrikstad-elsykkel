@@ -3,6 +3,8 @@ import { Article } from "@/types";
 import Link from "next/link";
 
 const ArticleCard: React.FC<Article> = (props) => {
+  console.log(typeof props.content);
+
   return (
     <div className={styles.wrapper} style={props.style}>
       <div>
@@ -11,9 +13,13 @@ const ArticleCard: React.FC<Article> = (props) => {
       <div>
         <p className={styles.title}>{props.title}</p>
         <div className={styles.content}>
-          {props.content.map((block: any, idx: number) => (
-            <p key={idx}>{block.children[0].text}</p>
-          ))}
+          {typeof props.content === "object" ? (
+            props.content.map((block: any, idx: number) => (
+              <p key={idx}>{block.children[0].text}</p>
+            ))
+          ) : (
+            <p>{props.content}</p>
+          )}
         </div>
         <div>
           <Link className="button button_secondary" href={props.url}>

@@ -22,7 +22,10 @@ const Products = async () => {
         })}
       </div>
       <div className="button_container">
-        <a href="#" className="button button_primary">
+        <a
+          href="https://www.e-wheels.no/elsykkel/"
+          className="button button_primary"
+        >
           Se alle modeller
         </a>
       </div>

@@ -1,6 +1,14 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./page.module.scss";
+import { Metadata } from "next";
+import ArticleCard from "@/components/shared/ArticleCard";
+
+export const metadata: Metadata = {
+  title: "Om oss - Elsykkel Trondheim",
+  description:
+    "Vi er Norges ledende leverandør av små elektriske kjøretøy. E-wheels har merker som Momas, Fosna og Avelo.",
+};
 
 const Page = () => {
   return (
@@ -9,7 +17,7 @@ const Page = () => {
         <h1>Hvem er vi?</h1>
         <h2>
           Vi er norges største leverandør av små elektriske kjøretøy. Du finner
-          oss i Søndre gate 20.
+          oss i Søndre gate 20 i Midtbyen
         </h2>
         <section className={`${styles.wrapper} max-width`}>
           <img src="/images/girl-with-bike.jpg" alt="" />

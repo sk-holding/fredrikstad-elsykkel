@@ -13,7 +13,7 @@
     }
     
     &:hover  {
-        transform: scale(102%);
+        transform: translateY(-5px);
         box-shadow: 0 0 10px -6px rgb(168, 168, 168);
     }
 
@@ -23,8 +23,9 @@
     }
 
     p:nth-of-type(2) {
+        transition: all .3s;
         font-weight: 200;
-        overflow: hidden;
-        max-height: 2.5rem;
+        font-size: 0.95rem;
+        color: var(--gray-text);
     }
 }
