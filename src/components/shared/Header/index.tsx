@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./index.module.scss";
+import { useState } from "react";
 
 const navLinks = [
   { name: "Våre sykler", href: "/vare-sykler" },
@@ -14,6 +15,11 @@ const navLinks = [
 
 const Header = () => {
   const pathName = usePathname();
+  const [menuState, setMenuState] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setMenuState(!menuState);
+  };
 
   return (
     <nav className={styles.wrapper}>
@@ -25,7 +31,14 @@ const Header = () => {
           <Link href="/" className={styles.logo}>
             <img src="/images/E-wheels_logo.png" alt="E-Wheels Logo" />
           </Link>
-          <div className={styles.links}>
+          <div
+            className={`${styles.links} ${
+              menuState ? styles.visible : styles.hidden
+            }`}
+          >
+            <div className={styles.closeMenuIcon} onClick={toggleMenu}>
+              <img src="./icons/closeMenuIcon.svg" alt="menu icon" />
+            </div>
             {navLinks.map((link, idx) => {
               const isActive = pathName.startsWith(link.href);
               return (
@@ -38,6 +51,9 @@ const Header = () => {
                 </Link>
               );
             })}
+          </div>
+          <div className={styles.menuIcon} onClick={toggleMenu}>
+            <img src="./icons/menuIcon.svg" alt="menu icon" />
           </div>
         </div>
       </section>

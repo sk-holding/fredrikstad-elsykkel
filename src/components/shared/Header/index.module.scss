@@ -1,5 +1,9 @@
 .wrapper {
 
+    .menuIcon {
+        display: none;
+    }
+
     .banner {
         background-color: var(--secondary-color);
         text-align: center;
@@ -51,8 +55,37 @@
     .wrapper {
         position: relative;
 
-        .links {
+        .container {
+            padding: 2rem 1rem !important;
+        }
+
+        .menuIcon {
+            display: block;
+        }
+        
+        .closeMenuIcon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        
+        .closeMenuIcon,
+        .menuIcon {
+            cursor: pointer;
+            width: 2.2rem;
+
+        }
+
+        .visible {
+            display: flex;
+        }
+
+        .hidden {
             display: none !important;
+        }
+
+        .links {
+            transition: all .3s;
             flex-direction: column;
             position: fixed;
             background-color: var(--primary-color);
