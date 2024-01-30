@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Butikker from "@/components/butikk/Butikker";
 
 export const metadata: Metadata = {
   title: "Butikk - Elsykkel Trondheim",
@@ -16,6 +17,7 @@ const Page = () => {
           Søndre gate 20. Kom innom for en trivelig elsykkelprat!
         </h2>
       </div>
+      <Butikker />
     </main>
   );
 };

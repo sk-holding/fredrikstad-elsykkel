@@ -15,4 +15,14 @@ const bikeQuery = `*[_type == "bikes"] | order(_createdAt desc) {
   buttonText
 }`
 
-export { bikeQuery, articleQuery }
+const storeQuery = `
+*[_type == "stores" && slug.current == "e-wheels-trondheim"] {
+  storeName,
+  storeAddress,
+  "image": image.asset->url,
+  url,
+  slug
+}
+`
+
+export { bikeQuery, articleQuery, storeQuery }

@@ -15,3 +15,10 @@ export interface Article {
     buttonText: string,
     style?: CSSProperties
 }
+
+export interface Store {
+    storeName: string,
+    storeAddress: string,
+    image: string,
+    url: string
+}

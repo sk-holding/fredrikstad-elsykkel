@@ -1,7 +1,6 @@
 import Map from "@/components/shared/Map";
-import styles from "./page.module.scss";
 import { Metadata } from "next";
-import ArticleCard from "@/components/shared/ArticleCard";
+import Kontakt from "@/components/kontakt-oss/Kontakt";
 
 export const metadata: Metadata = {
   title: "Kontakt - Elsykkel Trondheim",
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <main className={`max-width`}>
+    <main>
       <div className="title-block">
         <h1>Kontakt oss</h1>
         <h2>
@@ -19,28 +18,7 @@ const Page = () => {
           <a href="https://www.e-wheels.no/kundeservice/"> kundesenter</a>
         </h2>
       </div>
-      <div className={styles.wrapper}>
-        <Map />
-        <div className={styles.inner}>
-          <div>
-            <p>
-              <b>Telefon: </b>
-              <a href="tel:004732757632">32 75 76 32</a>
-            </p>
-            <p>
-              <b>Adresse:</b> Søndre gate 30, 7010 Trondheim
-            </p>
-          </div>
-          <div>
-            <a
-              className="button button_primary"
-              href="https://www.e-wheels.no/kundeservice/kontakt-oss/"
-            >
-              Kontakt oss
-            </a>
-          </div>
-        </div>
-      </div>
+      <Kontakt />
     </main>
   );
 };
