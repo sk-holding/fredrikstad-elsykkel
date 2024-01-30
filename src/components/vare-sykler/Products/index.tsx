@@ -1,10 +1,12 @@
-import { getBikes } from "@/functions/getData";
+import { sanityFetch } from "@/functions/getData";
 import { Bike } from "@/types";
 import ProductCard from "@/components/shared/ProductCard";
 import styles from "./index.module.scss";
+import { bikeQuery } from "@/lib/queries";
 
 const Products = async () => {
-  const data = await getBikes();
+  const query = bikeQuery;
+  const data = await sanityFetch(query);
 
   return (
     <section className={`${styles.wrapper} max-width section`}>

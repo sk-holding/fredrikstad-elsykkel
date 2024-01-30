@@ -3,8 +3,6 @@ import { Article } from "@/types";
 import Link from "next/link";
 
 const ArticleCard: React.FC<Article> = (props) => {
-  console.log(typeof props.content);
-
   return (
     <div className={styles.wrapper} style={props.style}>
       <div>

@@ -15,7 +15,7 @@ const Page = () => {
         <h1>Våre sykler</h1>
         <h2>
           Her ser du noen av våre elsykler. E-Wheels fører kjente merker som
-          Momas, Avelo, Fosna og Giant.
+          Momas, Avelo og Fosna.
         </h2>
       </div>
       <Products />
