@@ -38,10 +38,10 @@ const NavMobile: React.FC<Props> = ({ navLinks }) => {
                     damping: 20,
                     delay: 0.1 + idx / 10,
                   }}
+                  key={idx}
                 >
                   <Link
                     href={link.href}
-                    key={idx}
                     className={`${isActive ? styles.active : ""} ${
                       styles.linkItem
                     } `}
