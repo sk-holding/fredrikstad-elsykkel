@@ -22,3 +22,8 @@ export interface Store {
     image: string,
     url: string
 }
+
+export interface NavLink {
+    name: string;
+    href: string;
+  }

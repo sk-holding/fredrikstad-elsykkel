@@ -23,6 +23,10 @@ body {
     flex-direction: column;
 }
 
+li {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
     color: var(--secondary-color);
@@ -107,4 +111,10 @@ img {
     h4 {
         text-align: center;
     }
+}
+
+/* Active navigation link */
+
+.active {
+    color: var(--secondary-color);
 }

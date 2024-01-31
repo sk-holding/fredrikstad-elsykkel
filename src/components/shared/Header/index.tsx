@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import styles from "./index.module.scss";
-import { useState } from "react";
+import NavDesktop from "./NavDesktop";
+import { NavLink } from "@/types";
+import useScreenSize from "@/hooks/useScreenSize";
+import NavMobile from "./NavMobile";
 
-const navLinks = [
+const navLinks: NavLink[] = [
   { name: "Våre sykler", href: "/vare-sykler" },
   { name: "Butikk", href: "/butikk" },
   { name: "Verksted", href: "/verksted" },
@@ -14,13 +16,7 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const pathName = usePathname();
-  const [menuState, setMenuState] = useState<boolean>(false);
-
-  const toggleMenu = () => {
-    setMenuState(!menuState);
-  };
-
+  const screenSize = useScreenSize();
   return (
     <nav className={styles.wrapper}>
       <section className={styles.banner}>
@@ -31,30 +27,11 @@ const Header = () => {
           <Link href="/" className={styles.logo}>
             <img src="/images/E-wheels_logo.png" alt="E-Wheels Logo" />
           </Link>
-          <div
-            className={`${styles.links} ${
-              menuState ? styles.visible : styles.hidden
-            }`}
-          >
-            <div className={styles.closeMenuIcon} onClick={toggleMenu}>
-              <img src="./icons/closeMenuIcon.svg" alt="menu icon" />
-            </div>
-            {navLinks.map((link, idx) => {
-              const isActive = pathName.startsWith(link.href);
-              return (
-                <Link
-                  href={link.href}
-                  key={idx}
-                  className={isActive ? styles.active : ""}
-                >
-                  {link.name}
-                </Link>
-              );
-            })}
-          </div>
-          <div className={styles.menuIcon} onClick={toggleMenu}>
-            <img src="./icons/menuIcon.svg" alt="menu icon" />
-          </div>
+          {screenSize.width >= 750 ? (
+            <NavDesktop navLinks={navLinks} />
+          ) : (
+            <NavMobile navLinks={navLinks} />
+          )}
         </div>
       </section>
     </nav>
