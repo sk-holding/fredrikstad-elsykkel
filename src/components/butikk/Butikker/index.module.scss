@@ -3,10 +3,21 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    margin-bottom: 2rem;
     
     .inner {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
 
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .wrapper {
+
+        .inner {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
     }
 }

@@ -6,6 +6,7 @@ import { articleQuery } from "@/lib/queries";
 const ArticleCards = async () => {
   const query = articleQuery;
   const data = await sanityFetch(query);
+
   return (
     <div>
       {data.map((article: Article, idx: number) => {

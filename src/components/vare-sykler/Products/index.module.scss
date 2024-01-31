@@ -7,3 +7,12 @@
 
     }
 }
+
+@media screen and (max-width: 850px) {
+    .wrapper {
+        .inner {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+}

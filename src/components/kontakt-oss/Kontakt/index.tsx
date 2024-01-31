@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 const Kontakt = () => {
   return (
-    <section className={`${styles.wrapper} max-width`}>
+    <section className={styles.wrapper}>
       <Map />
       <div>
         <div className={styles.inner}>

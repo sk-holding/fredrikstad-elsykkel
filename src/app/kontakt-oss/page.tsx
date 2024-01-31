@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <main>
+    <main className="max-width">
       <div className="title-block">
         <h1>Kontakt oss</h1>
         <h2>

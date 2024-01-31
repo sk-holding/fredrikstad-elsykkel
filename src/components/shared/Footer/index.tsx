@@ -20,7 +20,13 @@ const Footer = () => {
               <Link href="/om-oss">Om oss</Link>
             </li>
             <li>
-              <Link href="/butikker">Butikk</Link>
+              <Link href="/butikk">Butikk</Link>
+            </li>
+            <li>
+              <Link href="/verksted">Verksted</Link>
+            </li>
+            <li>
+              <Link href="/kontakt-oss">Kontakt</Link>
             </li>
           </ul>
         </div>

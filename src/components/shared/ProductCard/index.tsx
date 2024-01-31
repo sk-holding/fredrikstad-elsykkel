@@ -6,8 +6,10 @@ const ProductCard: React.FC<Bike> = (props) => {
     <a href={props.url}>
       <div className={styles.wrapper}>
         <img src={props.image} alt={props.title} />
-        <p>{props.title}</p>
-        <p>{props.description}</p>
+        <div>
+          <p>{props.title}</p>
+          <p>{props.description}</p>
+        </div>
       </div>
     </a>
   );

@@ -9,7 +9,7 @@ const Products = async () => {
   const data = await sanityFetch(query);
 
   return (
-    <section className={`${styles.wrapper} max-width section`}>
+    <section className={`${styles.wrapper} section`}>
       <div className={styles.inner}>
         {data.map((bike: Bike, idx: number) => {
           return (

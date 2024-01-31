@@ -1,11 +1,13 @@
 .wrapper {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 0.5rem;
     background-color: #fff;
     padding: 1rem;
     color: var(--dark-text);
     transition: all .3s;
+    height: 20rem;
 
 
     img  {
@@ -27,5 +29,25 @@
         font-weight: 200;
         font-size: 0.95rem;
         color: var(--gray-text);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .wrapper {
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        height: 15rem;
+
+        p:first-of-type {
+            font-size: 0.9rem;
+        }
+
+        p:nth-of-type(2) {
+            font-size: 0.8rem;
+        }
     }
 }
