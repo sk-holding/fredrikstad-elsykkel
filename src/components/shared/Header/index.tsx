@@ -17,6 +17,7 @@ const navLinks: NavLink[] = [
 
 const Header = () => {
   const screenSize = useScreenSize();
+
   return (
     <nav className={styles.wrapper}>
       <section className={styles.banner}>
