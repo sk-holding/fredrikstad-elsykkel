@@ -28,7 +28,7 @@ const Header = () => {
           <Link href="/" className={styles.logo}>
             <img src="/images/E-wheels_logo.png" alt="E-Wheels Logo" />
           </Link>
-          {screenSize.width >= 750 ? (
+          {screenSize!.width >= 750 ? (
             <NavDesktop navLinks={navLinks} />
           ) : (
             <NavMobile navLinks={navLinks} />
