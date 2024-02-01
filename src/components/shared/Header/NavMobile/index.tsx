@@ -1,5 +1,5 @@
 import Hamburger from "hamburger-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./index.module.scss";
 import { NavLink } from "@/types";
 import Link from "next/link";
@@ -13,9 +13,24 @@ interface Props {
 const NavMobile: React.FC<Props> = ({ navLinks }) => {
   const pathName = usePathname();
   const [isOpen, setOpen] = useState<boolean>(false);
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (ref.current && !ref.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref]);
 
   return (
-    <div className={styles.wrapper}>
+    <div ref={ref} className={styles.wrapper}>
       <Hamburger toggled={isOpen} toggle={setOpen} color="#fff" />
       <AnimatePresence>
         {isOpen && (

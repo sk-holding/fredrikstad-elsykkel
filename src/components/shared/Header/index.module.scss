@@ -7,17 +7,22 @@
     .banner {
         background-color: var(--secondary-color);
         text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
         font-weight: 600;
-        padding: 0.3rem 0;
+        height: 2rem;
     }
     
     .main {
         background-color: var(--primary-color);
-        
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+
         .container {
             max-width: var(--max-width);
-            padding: 2rem 1rem;
-
+            width: 100%;
             margin: auto;
             display: flex;
             justify-content: space-between;

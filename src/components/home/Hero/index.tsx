@@ -1,4 +1,3 @@
-import { AnimatePresence, motion } from "framer-motion";
 import styles from "./index.module.scss";
 import Link from "next/link";
 

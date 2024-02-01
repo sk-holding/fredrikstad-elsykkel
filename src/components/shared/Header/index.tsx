@@ -32,22 +32,46 @@ const Header = () => {
   });
 
   return (
-    <motion.nav
-      className={styles.wrapper}
-      variants={{
-        visible: { y: 0 },
-        hidden: { y: "-100%" },
-      }}
-      animate={hidden ? "hidden" : "visible"}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
-    >
-      <section className={styles.banner}>
+    <nav className={styles.wrapper}>
+      <motion.section
+        className={styles.banner}
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-100%" },
+        }}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+      >
         <p>Norges største leverandør av elsykkel</p>
-      </section>
-      <section className={styles.main}>
+      </motion.section>
+      <motion.section
+        className={styles.main}
+        variants={
+          screenSize!.width >= 750
+            ? {
+                visible: { height: "5rem" },
+                hidden: { y: "-2rem", height: "2.5rem" },
+              }
+            : {
+                visible: { height: "5rem" },
+                hidden: { y: "-2rem" },
+              }
+        }
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+      >
         <div className={styles.container}>
           <Link href="/" className={styles.logo}>
-            <img src="/images/E-wheels_logo.png" alt="E-Wheels Logo" />
+            <motion.img
+              variants={{
+                visible: { width: "12rem" },
+                hidden: { width: "10rem" },
+              }}
+              animate={hidden ? "hidden" : "visible"}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              src="/images/E-wheels_logo.png"
+              alt="E-Wheels Logo"
+            />
           </Link>
           {screenSize!.width >= 750 ? (
             <NavDesktop navLinks={navLinks} />
@@ -55,8 +79,8 @@ const Header = () => {
             <NavMobile navLinks={navLinks} />
           )}
         </div>
-      </section>
-    </motion.nav>
+      </motion.section>
+    </nav>
   );
 };
 
