@@ -8,7 +8,7 @@ const Butikker = async () => {
   const query = storeQuery;
   const data = await sanityFetch(query);
   return (
-    <section className={`${styles.wrapper} max-width`}>
+    <section className={styles.wrapper}>
       <div className={styles.inner}>
         {data.map((store: Store, idx: number) => {
           return (
