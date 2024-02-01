@@ -1,4 +1,9 @@
 .wrapper {
+
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    
     .banner {
         background-color: var(--secondary-color);
         text-align: center;
@@ -24,11 +29,4 @@
     
         }
     }
-}
-
-@media screen and (max-width: 750px) {
-    .wrapper {
-        position: relative;
-        width: 100%;
-    };
 }

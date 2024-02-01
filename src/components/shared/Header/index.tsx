@@ -6,6 +6,8 @@ import NavDesktop from "./NavDesktop";
 import { NavLink } from "@/types";
 import useScreenSize from "@/hooks/useScreenSize";
 import NavMobile from "./NavMobile";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useState } from "react";
 
 const navLinks: NavLink[] = [
   { name: "Våre sykler", href: "/vare-sykler" },
@@ -16,10 +18,29 @@ const navLinks: NavLink[] = [
 ];
 
 const Header = () => {
+  const [hidden, setHidden] = useState(false);
   const screenSize = useScreenSize();
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous! && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   return (
-    <nav className={styles.wrapper}>
+    <motion.nav
+      className={styles.wrapper}
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
       <section className={styles.banner}>
         <p>Norges største leverandør av elsykkel</p>
       </section>
@@ -35,7 +56,7 @@ const Header = () => {
           )}
         </div>
       </section>
-    </nav>
+    </motion.nav>
   );
 };
 
