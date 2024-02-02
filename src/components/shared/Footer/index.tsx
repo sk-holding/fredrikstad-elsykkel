@@ -38,6 +38,11 @@ const Footer = () => {
             701 380
           </p>
           <ul>
+            <img src="/icons/facebook.svg" alt="Facebook icon" />
+            <img src="/icons/instagram.svg" alt="Instagram icon" />
+            <img src="/icons/youtube.svg" alt="YouTube icon" />
+          </ul>
+          {/* <ul>
             <a href="https://www.facebook.com/Ewheels.no">
               <img src="/icons/facebook.svg" alt="Facebook icon" />
             </a>
@@ -47,7 +52,7 @@ const Footer = () => {
             <a href="https://www.youtube.com/channel/UCDvYXAfIS3VyvP7QmWbmD7Q/videos">
               <img src="/icons/youtube.svg" alt="YouTube icon" />
             </a>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </footer>
