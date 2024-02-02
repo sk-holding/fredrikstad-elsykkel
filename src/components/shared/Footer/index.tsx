@@ -3,9 +3,9 @@ import styles from "./index.module.scss";
 
 const Footer = () => {
   return (
-    <section className={styles.wrapper}>
-      <div className={styles.main}>
-        <div className={styles.main_inner}>
+    <footer className={styles.wrapper}>
+      <div className={styles.header}>
+        <div className={styles.header_inner}>
           <img src="/images/logo.svg" alt="E-Wheels logo" />
           <p>
             Nordens største forhandler av personlige elektriske kjøretøy og
@@ -31,8 +31,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className={styles.banner}>
-        <div className={`${styles.banner_inner} max-width`}>
+      <div className={styles.footer}>
+        <div className={`${styles.footer_inner} max-width`}>
           <p>
             ©2023 E-Wheels Norge AS. Alle rettigheter reservert. Org nr.: 913
             701 380
@@ -50,7 +50,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
