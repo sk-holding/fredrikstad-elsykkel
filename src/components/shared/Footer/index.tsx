@@ -6,7 +6,7 @@ const Footer = () => {
     <section className={styles.wrapper}>
       <div className={styles.main}>
         <div className={styles.main_inner}>
-          <img src="/images/E-wheels_logo.png" alt="E-Wheels logo" />
+          <img src="/images/logo.svg" alt="E-Wheels logo" />
           <p>
             Nordens største forhandler av personlige elektriske kjøretøy og
             anses som en pioner i det grønne skiftet. E-Wheels gruppen består av

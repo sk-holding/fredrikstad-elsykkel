@@ -65,11 +65,11 @@ const Header = () => {
             <motion.img
               variants={{
                 visible: { width: "12rem" },
-                hidden: { width: "10rem" },
+                hidden: { width: "8rem" },
               }}
               animate={hidden ? "hidden" : "visible"}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              src="/images/E-wheels_logo.png"
+              src="/images/logo.svg"
               alt="E-Wheels Logo"
             />
           </Link>

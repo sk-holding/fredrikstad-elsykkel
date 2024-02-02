@@ -1,53 +1,21 @@
 .wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    background-color: #fff;
-    padding: 1rem;
-    color: var(--dark-text);
-    transition: all .3s;
-    height: 20rem;
 
-
-    img  {
-        height: auto;
+    img {
+        transition: all .3s;
     }
-    
-    &:hover  {
-        transform: translateY(-5px);
-        box-shadow: 0 0 10px -6px rgb(168, 168, 168);
+
+    &:hover img {
+        box-shadow: 0 0 0 1px rgb(111, 111, 111);
     }
 
     p:first-of-type {
+        color: var(--dark-text);
         font-weight: 600;
-        font-size: 1.1rem;
     }
 
     p:nth-of-type(2) {
-        transition: all .3s;
-        font-weight: 200;
-        font-size: 0.95rem;
+        font-size: 0.85rem;
         color: var(--gray-text);
     }
-}
 
-@media screen and (max-width: 850px) {
-    .wrapper {
-        height: 25rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .wrapper {
-        height: 15rem;
-
-        p:first-of-type {
-            font-size: 0.9rem;
-        }
-
-        p:nth-of-type(2) {
-            font-size: 0.8rem;
-        }
-    }
 }
