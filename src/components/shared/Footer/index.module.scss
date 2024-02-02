@@ -41,11 +41,14 @@
 
             ul {
                 display: flex;
+                justify-content: center;
                 gap: 1rem;
 
-                img {
+                li * {
                     height: 1.5rem;
+                    width: 1.5rem;
                 }
+
             }
         }
     }
