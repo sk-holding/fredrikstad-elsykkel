@@ -8,6 +8,7 @@ const Map = () => {
         loading="lazy"
         style={{ border: "none" }}
         title="map"
+        aria-hidden="true"
       ></iframe>
     </div>
   );
