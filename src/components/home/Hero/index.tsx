@@ -1,7 +1,13 @@
+"use client";
+
+import Image from "next/image";
 import styles from "./index.module.scss";
 import Link from "next/link";
+import useScreenSize from "@/hooks/useScreenSize";
 
 const Hero = () => {
+  const screenSize = useScreenSize();
+
   return (
     <section className={styles.wrapper}>
       <div className={styles.content}>
@@ -18,6 +24,27 @@ const Hero = () => {
           </Link>
         </div>
       </div>
+      {screenSize.width >= 750 ? (
+        <Image
+          src="/images/hero-image.webp"
+          alt="Person på elsykkel med Nidarosdomen i bakgrunn"
+          fill
+          style={{
+            objectFit: "cover",
+          }}
+          priority
+        />
+      ) : (
+        <Image
+          src="/images/hero-image_mobile.webp"
+          alt="Person på elsykkel med Nidarosdomen i bakgrunn"
+          fill
+          style={{
+            objectFit: "cover",
+          }}
+          priority
+        />
+      )}
     </section>
   );
 };

@@ -5,7 +5,7 @@
 
     --light-text: #ffffff;
     --light-gray-text: #cccccc;
-    --gray-text: #777777;
+    --gray-text: #525252;
     --dark-text: var(--primary-color);
 
     --max-width: 1200px;
@@ -42,8 +42,7 @@ h3 {
 
 h4 {
     font-size: 1.3rem;
-    color: var(--gray-text);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 img {

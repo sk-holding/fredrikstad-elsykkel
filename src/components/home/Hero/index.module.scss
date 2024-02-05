@@ -1,8 +1,10 @@
 .wrapper {
-    background: url("/images/hero-image.jpg") no-repeat center;
+    // background: url("/images/hero-image.webp") no-repeat 70%;
+    // background: url("/images/hero-image.jpg") no-repeat 70%;
     background-size: cover;
     position: relative;
     padding-top: 8rem;
+    height: 70vh;
     
     .content {
         z-index: 2;
@@ -10,18 +12,23 @@
         color: var(--light-text);
         max-width: var(--max-width);
         margin: auto;
-        min-height: 70vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 2rem;
         padding: 1rem;
 
+        h2 {
+            font-size: 1.3rem;
+        }
+
         * {
-            max-width: 30rem;
+            max-width: 25rem;
         }
 
     }
+
     
     // overlay
     &::after {
@@ -33,5 +40,12 @@
         right: 0;
         position: absolute;
         z-index: 1;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper {
+        // background: url("/images/hero-image_mobile.webp") no-repeat 70%;
+        // background: url("/images/hero-image_mobile.jpg") no-repeat 70%;
     }
 }

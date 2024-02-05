@@ -1,4 +1,8 @@
-import Map from "@/components/shared/Map";
+// import Map from "@/components/shared/Map";
+
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("@/components/shared/Map"), { ssr: false });
 
 const Stores = () => {
   return (
