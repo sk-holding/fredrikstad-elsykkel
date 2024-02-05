@@ -7,6 +7,7 @@ const Map = () => {
         height="450"
         loading="lazy"
         style={{ border: "none" }}
+        title="map"
       ></iframe>
     </div>
   );

@@ -26,7 +26,9 @@ const Kontakt = () => {
           <h3>Butikk</h3>
           <div className={styles.usp}>
             <img src="/icons/house.svg" alt="house icon" />
-            <p>Søndre gate 30, 7010 Trondheim</p>
+            <a href="https://www.google.com/maps/place/S%C3%B8ndre+gate+20,+7010+Trondheim/@63.4336655,10.3998397,17z/data=!4m6!3m5!1s0x466d319c0cfad391:0x54e4d362b382d640!8m2!3d63.4336655!4d10.3998397!16s%2Fg%2F11c12r6vwt">
+              Søndre gate 30, 7010 Trondheim
+            </a>
           </div>
           <p>
             Våre dyktige medarbeidere står klare til å ta deg i mot i vår flotte

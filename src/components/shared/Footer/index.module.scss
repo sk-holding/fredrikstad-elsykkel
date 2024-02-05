@@ -1,7 +1,8 @@
 .wrapper {
+    
     .header {
         background-color: var(--primary-color);
-
+        
         .header_inner {
             display: flex;
             gap: 1.5rem;
@@ -12,7 +13,7 @@
             padding: 2rem 1rem;
             margin: auto;
             color: var(--light-text);
-
+            
             img {
                 width: 12rem;
             }
@@ -20,34 +21,43 @@
             ul {
                 display: flex;
                 gap: 1.5rem;
-
+                
                 * {
                     color: var(--light-text);
+                    transition: all .3s;
+                    border-bottom: none;
+
+                    &:hover {
+                        color: var(--secondary-color);
+                    }
                 }
             }
-
+            
         }
-
+        
     }
-
+    
     .footer {
         background-color: var(--secondary-color);
-
+        
         .footer_inner {
             display: flex;
             justify-content: space-between;
             padding: 0.5rem;
             font-size: .8rem;
             text-align: center;
-
+            
             ul {
                 display: flex;
                 justify-content: center;
                 gap: 1rem;
-
+                
                 li * {
                     height: 1.5rem;
                     width: 1.5rem;
+                }
+                a {
+                    border-bottom: none;
                 }
 
             }

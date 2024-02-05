@@ -1,5 +1,4 @@
 .wrapper {
-
     img {
         transition: all .3s;
     }
@@ -18,4 +17,8 @@
         color: var(--gray-text);
     }
 
+}
+
+a:has(.wrapper) {
+    border-bottom: none;
 }

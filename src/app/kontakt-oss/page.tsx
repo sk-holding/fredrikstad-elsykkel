@@ -14,8 +14,8 @@ const Page = () => {
       <div className="title-block">
         <h1>Kontakt oss</h1>
         <h2>
-          Noe du lurer på? Ta kontakt med oss eller sjekk ut vårt
-          <a href="https://www.e-wheels.no/kundeservice/"> kundesenter</a>
+          Noe du lurer på? Ta kontakt med oss eller sjekk ut vårt{" "}
+          <a href="https://www.e-wheels.no/kundeservice/">kundesenter</a>
         </h2>
       </div>
       <Kontakt />

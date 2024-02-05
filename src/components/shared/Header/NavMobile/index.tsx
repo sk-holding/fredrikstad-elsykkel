@@ -31,7 +31,12 @@ const NavMobile: React.FC<Props> = ({ navLinks }) => {
 
   return (
     <div ref={ref} className={styles.wrapper}>
-      <Hamburger toggled={isOpen} toggle={setOpen} color="#fff" />
+      <Hamburger
+        label="Menu icon"
+        toggled={isOpen}
+        toggle={setOpen}
+        color="#fff"
+      />
       <AnimatePresence>
         {isOpen && (
           <motion.div

@@ -29,8 +29,16 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--secondary-color);
+    font-weight: 500;
+    color: var(--dark-text);
+    border-bottom: 1px solid var(--dark-text);
+    
+    &:hover {
+        color: var(--secondary-color);
+        border-bottom: 1px solid var(--secondary-color);
+    }
 }
+
 
 p {
     line-height: 1.5rem;
@@ -84,9 +92,10 @@ img {
     border: none;
     display: inline-block;
     transition: all .3s;
-
+    
     &:hover {
-        transform: scale(105%);
+        border-bottom: none;
+
     }
 }
 
@@ -94,11 +103,21 @@ img {
     background-color: var(--secondary-color);
     color: var(--dark-text);
 
+    &:hover {
+        color: var(--light-text);
+        background-color: var(--primary-color);
+    }
+
 }
 
 .button_secondary {
     background-color: var(--primary-color);
     color: var(--light-text);
+
+    &:hover {
+        color: var(--dark-text);
+        background-color: var(--secondary-color);
+    }
 }
 
 .section {

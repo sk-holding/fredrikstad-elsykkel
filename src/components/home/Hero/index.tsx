@@ -31,6 +31,7 @@ const Hero = () => {
           fill
           style={{
             objectFit: "cover",
+            objectPosition: "40%",
           }}
           priority
         />
@@ -41,6 +42,7 @@ const Hero = () => {
           fill
           style={{
             objectFit: "cover",
+            objectPosition: "65%",
           }}
           priority
         />
