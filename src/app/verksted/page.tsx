@@ -1,5 +1,7 @@
+import Stores from "@/components/shared/Stores";
 import Article from "@/components/verksted/Article";
 import { Metadata } from "next";
+import { location } from "@/lib/locations";
 
 export const metadata: Metadata = {
   title: "Verksted - Elsykkel Trondheim",
@@ -18,6 +20,11 @@ const Page = () => {
         </h2>
       </div>
       <Article />
+      <Stores
+        title="E-Mexx Trondheim"
+        description="Vi har verksted i Jomfrugata 17b"
+        location={location.verksted}
+      />
     </main>
   );
 };

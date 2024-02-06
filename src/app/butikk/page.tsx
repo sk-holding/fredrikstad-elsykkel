@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Butikker from "@/components/butikk/Butikker";
+import Stores from "@/components/shared/Stores";
+import { location } from "@/lib/locations";
 
 export const metadata: Metadata = {
   title: "Butikk - Elsykkel Trondheim",
@@ -18,6 +20,11 @@ const Page = () => {
         </h2>
       </div>
       <Butikker />
+      <Stores
+        title="E-Wheels Trondheim"
+        description="Kom innom våre flotte butikk i Søndre gate 20"
+        location={location.butikk}
+      />
     </main>
   );
 };

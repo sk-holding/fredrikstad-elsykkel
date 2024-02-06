@@ -1,4 +1,4 @@
-import Map from "@/components/shared/Map";
+import Map from "@/components/shared/Stores/_components/Map";
 import { Metadata } from "next";
 import Kontakt from "@/components/kontakt-oss/Kontakt";
 

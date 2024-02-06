@@ -1,10 +1,11 @@
-import Map from "@/components/shared/Map";
+import Map from "@/components/shared/Stores/_components/Map";
 import styles from "./index.module.scss";
+import Stores from "@/components/shared/Stores";
 
 const Kontakt = () => {
   return (
     <section className={styles.wrapper}>
-      <Map />
+      <Map location="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1784.379949884692!2d10.397339413853091!3d63.43368117675889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d315e3ee04e79%3A0xb1c2b3bc8f0f53a8!2sE-Wheels%20Trondheim%20-%20Elsykkel%20og%20Elsparkesykkel%20butikk!5e0!3m2!1sno!2sus!4v1707214519532!5m2!1sno!2sus" />
       <div>
         <div className={styles.inner}>
           <h3>Telefonsupport</h3>
