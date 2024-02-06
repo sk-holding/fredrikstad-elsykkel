@@ -6,8 +6,8 @@ const Map = dynamic(
 );
 
 interface Store {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   location: string;
   button?: {
     href: string;

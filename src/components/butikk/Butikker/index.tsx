@@ -22,14 +22,6 @@ const Butikker = async () => {
           );
         })}
       </div>
-      <div>
-        <a
-          className="button button_primary"
-          href="https://www.e-wheels.no/butikker/"
-        >
-          Se alle butikker
-        </a>
-      </div>
     </section>
   );
 };

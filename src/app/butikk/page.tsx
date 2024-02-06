@@ -20,11 +20,7 @@ const Page = () => {
         </h2>
       </div>
       <Butikker />
-      <Stores
-        title="E-Wheels Trondheim"
-        description="Kom innom våre flotte butikk i Søndre gate 20"
-        location={location.butikk}
-      />
+      <Stores location={location.butikk} />
     </main>
   );
 };
