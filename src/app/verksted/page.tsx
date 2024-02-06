@@ -24,6 +24,10 @@ const Page = () => {
         title="E-Mexx Trondheim"
         description="Vi har verksted i Jomfrugata 17b"
         location={location.verksted}
+        button={{
+          href: "https://e-mexx.no/verksteder/trondheim/",
+          content: "Se verksted",
+        }}
       />
     </main>
   );
