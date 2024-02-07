@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     "Er du ute etter elsykkel i Trondheim? Vi har elsykler i som passer alle. Kom innom oss for en trivelig el-sykkelprat!",
 };
 
+export const revalidate = 10;
+
 const Page = () => {
   return (
     <main className={styles.wrapper}>

@@ -1,12 +1,14 @@
-import { sanityFetch } from "@/functions/getData";
 import { Bike } from "@/types";
 import ProductCard from "@/components/shared/ProductCard";
 import styles from "./index.module.scss";
 import { bikeQuery } from "@/lib/queries";
+import { sanityFetch } from "@/lib/client";
 
 const Products = async () => {
   const query = bikeQuery;
-  const data = await sanityFetch(query);
+  const data = await sanityFetch<Bike>({ query, tags: ["bikes"] });
+
+  console.log(data);
 
   return (
     <section className={`${styles.wrapper} section`}>

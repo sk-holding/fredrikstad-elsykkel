@@ -1,4 +1,12 @@
-const bikeQuery = `*[_type == "bikes"] | order(_createdAt desc) {
+const bikeQuery = `*[_type == "bikes"] | order(title asc) {
+    title,
+    "currentSlug": slug.current,
+    description,
+    "image": image.asset->url,
+    url
+}`
+
+const featuredBikeQuery = `*[_type == "bikes" && featured] | order(_createdAt desc) {
     title,
     "currentSlug": slug.current,
     description,
@@ -25,4 +33,4 @@ const storeQuery = `
 }
 `
 
-export { bikeQuery, articleQuery, storeQuery }
+export { bikeQuery, articleQuery, storeQuery, featuredBikeQuery }
