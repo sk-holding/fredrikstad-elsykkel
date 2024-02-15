@@ -1,6 +1,5 @@
 .wrapper {
-    // background: url("/images/hero-image.webp") no-repeat 70%;
-    // background: url("/images/hero-image.jpg") no-repeat 70%;
+    background: url("/images/hero-image_mobile.webp") 60%;
     background-size: cover;
     position: relative;
     padding-top: 8rem;
@@ -28,7 +27,6 @@
         }
 
     }
-
     
     // overlay
     &::after {
@@ -40,5 +38,12 @@
         right: 0;
         position: absolute;
         z-index: 1;
+    }
+}
+
+@media screen and (min-width: "750px") {
+    .wrapper {
+        background: url("/images/hero-image.webp") no-repeat 40%;
+        background-size: cover;
     }
 }
