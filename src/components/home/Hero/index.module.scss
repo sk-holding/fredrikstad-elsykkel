@@ -1,6 +1,6 @@
 .wrapper {
-    background: url("/images/hero-image_mobile.webp") 60%;
-    background-size: cover;
+    // background: url("/images/hero-image_mobile.webp") 60%;
+    // background-size: cover;
     position: relative;
     padding-top: 8rem;
     height: 70vh;
@@ -41,9 +41,9 @@
     }
 }
 
-@media screen and (min-width: "750px") {
-    .wrapper {
-        background: url("/images/hero-image.webp") no-repeat 40%;
-        background-size: cover;
-    }
-}
+// @media screen and (min-width: "750px") {
+//     .wrapper {
+//         background: url("/images/hero-image.webp") no-repeat 40%;
+//         background-size: cover;
+//     }
+// }

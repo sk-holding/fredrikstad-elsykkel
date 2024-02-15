@@ -18,14 +18,8 @@ export default function RootLayout({
           id="ze-snippet"
           src="https://static.zdassets.com/ekr/snippet.js?key=a7567872-d0aa-4b6e-9c0d-fd6a7c08e798"
         />
-        <link rel="preload" href="/images/hero-image_mobile.webp" as="image" />
-        <link
-          rel="shortcut icon"
-          href="/images/favicon.ico"
-          type="image/x-icon"
-        />
       </head>
-      <body>
+      <body className={roboto.className}>
         <Header />
         {children}
         <Footer />
