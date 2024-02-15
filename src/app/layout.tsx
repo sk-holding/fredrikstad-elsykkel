@@ -24,7 +24,7 @@ export default function RootLayout({
           type="image/x-icon"
         />
       </head>
-      <body className={roboto.className}>
+      <body>
         <Header />
         {children}
         <Footer />
