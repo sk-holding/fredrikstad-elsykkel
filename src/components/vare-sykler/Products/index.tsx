@@ -8,8 +8,6 @@ const Products = async () => {
   const query = bikeQuery;
   const data = await sanityFetch<Bike>({ query, tags: ["bikes"] });
 
-  console.log(data);
-
   return (
     <section className={`${styles.wrapper} section`}>
       <div className={styles.inner}>
