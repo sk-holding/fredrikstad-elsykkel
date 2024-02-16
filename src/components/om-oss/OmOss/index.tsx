@@ -12,16 +12,15 @@ const OmOss = () => {
           Nordens ledende forhandlere av personlige elektriske kjøretøy. Med
           over 150 000 fornøyde kunder har E-Wheels vært en pioner innen å gjøre
           mikromobilitet tilgjengelig for alle. I samarbeid med E-Wheels Europe
-          AB leverer vi små elektriske kjøretøy til hele Skandinavia og
-          Frankrike, og vi er stolte av å representere våre egne merkevarer,
-          E-Wheels E2S og Momas, i tillegg til andre anerkjente merker som
-          Kaabo, Zero, Airwheel, Gotway, Joyor, og Kingsong.
+          AB leverer vi små elektriske kjøretøy til hele Skandinavia, Frankrike
+          og Sveits, og er stolte av å representere våre egne merkevarer,
+          E-Wheels E2S, Momas og Fosna, i tillegg til andre anerkjente merker
+          som Kaabo, Zero, Airwheel, Gotway, Joyor, og Kingsong.
         </p>
         <p>
-          I hjertet av Trondheim inviterer E-Wheels deg til en unik opplevelse
-          av personlig elektrisk transport. Utforsk vårt omfattende utvalg, fra
-          pålitelige og rimelige modeller til eksklusive premiumalternativer, og
-          finn det perfekte kjøretøyet som passer dine behov og preferanser.
+          Nylig har vi åpnet et nytt verksted i Kristiansand, hvor vi er klare
+          til å hjelpe deg med reparasjon og service av dine elektriske
+          kjøretøy.
         </p>
         <p>
           Vår historie startet i Drammen i 2014, hvor vi som en av de første
@@ -33,7 +32,7 @@ const OmOss = () => {
         <p>
           Vi forplikter oss til en grønn og bærekraftig fremtid, og vårt mål er
           å fortsette å tilby deg det nyeste innen små elektriske kjøretøy.
-          Utforsk E-Wheels Trondheim i dag, og bli med oss på reisen mot en
+          Utforsk E-Wheels i Kristiansand i dag, og bli med oss på reisen mot en
           fremtid med smart, bærekraftig og morsom mobilitet!
         </p>
         <Link href="/vare-sykler" className="button button_primary">

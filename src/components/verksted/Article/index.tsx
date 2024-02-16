@@ -6,11 +6,7 @@ const Article = () => {
     <section className={styles.wrapper}>
       <ArticleCard
         title="Reparasjon av din elsykkel"
-        content="Skulle det oppstå behov for reparasjon eller service av din
-          elsykkel så kan vi hjelpe deg. Våre teknikere har lang og god
-          erfaring med nettopp elsykler. Vi tilbyr selvsagt reparasjon av
-          alle produkter kjøpt hos oss. Vi gjør alt fra å skifte punkterte
-          dekk, til vårklargjøring, og full service."
+        content="Trenger du reparasjon eller service for din elsykkel i Kristiansand? Våre erfarne teknikere står klare til å hjelpe deg. Med omfattende kompetanse innen elsykler, garanterer vi kvalitetsreparasjoner for alle produkter kjøpt hos oss. Vår tjenestepallett spenner fra enkle oppgaver som utskifting av punkterte dekk til vårklargjøring og full service. Få din elsykkel i topp stand med vår profesjonelle assistanse, tilgjengelig rett her i Kristiansand."
         image="/images/mekaniker.jpg"
         url="https://e-mexx.no/book-service/"
         buttonText="Book service"

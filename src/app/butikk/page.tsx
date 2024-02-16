@@ -15,12 +15,11 @@ const Page = () => {
       <div className="title-block">
         <h1>Våre butikker</h1>
         <h2>
-          E-Wheels har butikker i hele landet. I Trondheim holder vi til i
-          Søndre gate 20. Kom innom for en trivelig elsykkelprat!
+          E-Wheels har flere butikker i Norge, Sverige og Sveits. I Kristiansand
+          åpner vi dørene til et helt nytt pick-up point i løpet av 2024.
         </h2>
       </div>
       <Butikker />
-      <Stores location={location.butikk} />
     </main>
   );
 };

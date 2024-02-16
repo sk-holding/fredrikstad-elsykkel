@@ -15,7 +15,7 @@ const featuredBikeQuery = `*[_type == "bikes" && featured] | order(_createdAt de
 }`
 
  const articleQuery = `
-*[_type == "article"] | order(_createdAt desc) {
+*[_type == "article" && kristiansand] | order(_createdAt desc) {
   title,
   content,
   "image": image.asset->url,
@@ -24,7 +24,7 @@ const featuredBikeQuery = `*[_type == "bikes" && featured] | order(_createdAt de
 }`
 
 const storeQuery = `
-*[_type == "stores" && slug.current == "e-wheels-trondheim"] {
+*[_type == "stores" && slug.current == "pick-up-point-kristiansand"] {
   storeName,
   storeAddress,
   "image": image.asset->url,

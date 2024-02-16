@@ -13,8 +13,8 @@ const Page = () => {
       <div className="title-block">
         <h1>Hvem er vi?</h1>
         <h2>
-          Vi er norges største leverandør av små elektriske kjøretøy. Du finner
-          oss i Søndre gate 20 i Midtbyen
+          Vi er nordens største forhandler av små elektriske kjøretøy, med
+          fysiske butikker flere steder i Skandinavia
         </h2>
       </div>
       <OmOss />

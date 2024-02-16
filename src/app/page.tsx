@@ -8,9 +8,9 @@ import { Metadata } from "next";
 import { location } from "@/lib/locations";
 
 export const metadata: Metadata = {
-  title: "Elsykkel Trondheim",
+  title: "Elsykkel Kristiansand",
   description:
-    "Er du ute etter elsykkel i Trondheim? Vi har elsykler i som passer alle. Kom innom oss for en trivelig el-sykkelprat!",
+    "Utforsk vår store utvalg av elsykler i Kristiansand! Vi tilbyr en rekke elektriske sykler for enhver smak og behov. Fra bypendling til terrengeventyr, vårt sortiment har noe for alle.",
 };
 
 export const revalidate = 10;
@@ -21,11 +21,6 @@ const Page = () => {
       <Hero />
       <Bestsellers />
       <Articles />
-      <Stores
-        title="E-Wheels Trondheim"
-        description="Kom innom våre flotte butikk i Søndre gate 20"
-        location={location.butikk}
-      />
     </main>
   );
 };

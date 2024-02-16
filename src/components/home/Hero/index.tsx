@@ -12,10 +12,9 @@ const Hero = () => {
     <section className={styles.wrapper}>
       <div className={styles.content}>
         <div>
-          <h1>Ute etter elsykkel i Trondheim?</h1>
+          <h1>Utforsk Kristiansand med våre kraftige elsykler</h1>
           <h2>
-            Da er du kommet til rett sted! Kom innom oss i midtbyen for en
-            trivelig sykkelprat!
+            Opplev sørlandets vakre landskap med våre prisvinnende elsykler
           </h2>
         </div>
         <div>
@@ -37,7 +36,7 @@ const Hero = () => {
         />
       ) : (
         <Image
-          src="/images/hero-image_mobile.webp"
+          src="/images/hero.webp"
           alt="Person på elsykkel med Nidarosdomen i bakgrunn"
           fill
           style={{

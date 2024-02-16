@@ -21,11 +21,11 @@ const Page = () => {
       </div>
       <Article />
       <Stores
-        title="E-Mexx Trondheim"
-        description="Vi har verksted i Jomfrugata 17b"
+        title="E-Mexx Kristiansand"
+        description="Vårt verksted finner du i Kjøita 19"
         location={location.verksted}
         button={{
-          href: "https://e-mexx.no/verksteder/trondheim/",
+          href: "https://e-mexx.no/verksteder/kristiansand/",
           content: "Se verksted",
         }}
       />
