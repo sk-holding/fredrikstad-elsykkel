@@ -8,6 +8,7 @@ import useScreenSize from "@/hooks/useScreenSize";
 import NavMobile from "./NavMobile";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const navLinks: NavLink[] = [
   { name: "Våre sykler", href: "/vare-sykler" },
@@ -21,10 +22,12 @@ const Header = () => {
   const [hidden, setHidden] = useState(false);
   const screenSize = useScreenSize();
   const { scrollY } = useScroll();
+  const pathname = usePathname();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious();
-    if (latest > previous! && latest > 0) {
+    console.log(latest);
+
+    if (latest > 0) {
       setHidden(true);
     } else {
       setHidden(false);
@@ -49,8 +52,14 @@ const Header = () => {
         variants={
           screenSize!.width >= 750
             ? {
-                visible: { height: "5rem" },
-                hidden: { y: "-2rem", height: "2.5rem" },
+                visible: {
+                  height: "5rem",
+                  backgroundColor: `${pathname === "/" ? "transparent" : ""}`,
+                },
+                hidden: {
+                  y: "-2rem",
+                  height: "2.5rem",
+                },
               }
             : {
                 visible: { height: "5rem" },

@@ -36,7 +36,7 @@ const Hero = () => {
         />
       ) : (
         <Image
-          src="/images/hero.webp"
+          src="/images/hero-image.webp"
           alt="Person på elsykkel med Nidarosdomen i bakgrunn"
           fill
           style={{
