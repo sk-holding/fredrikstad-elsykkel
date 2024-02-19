@@ -17,8 +17,15 @@ const Kontakt = () => {
         <div className={styles.inner}>
           <h3>Mail</h3>
           <p>
-            Ta kontakt med oss via <a href=""> dette kontaktskjemaet</a>, så får
-            du svar i løpet av kort tid.
+            Ta kontakt med oss via{" "}
+            <a
+              href="https://kundeservice.e-wheels.no/hc/no/requests/new"
+              target="_blank"
+            >
+              {" "}
+              dette kontaktskjemaet
+            </a>
+            , så får du svar i løpet av kort tid.
           </p>
         </div>
         <div className={styles.inner}>
