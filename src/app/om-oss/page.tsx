@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import OmOss from "@/components/om-oss/OmOss";
 
 export const metadata: Metadata = {
-  title: "Om oss - Elsykkel Trondheim",
+  title: "Om oss - Elsykkel Kristiansand",
   description:
-    "Vi er Norges ledende leverandør av små elektriske kjøretøy. E-wheels har merker som Momas, Fosna og Avelo.",
+    "Kajakk og Fritid ble grunnlagt i 2004 med en visjon om å tilby høykvalitets utstyr til de som elsker å utforske naturen gjennom utendørsaktiviteter.",
 };
 
 const Page = () => {
@@ -12,10 +12,6 @@ const Page = () => {
     <main className="max-width">
       <div className="title-block">
         <h1>Hvem er vi?</h1>
-        <h2>
-          Vi er nordens største forhandler av små elektriske kjøretøy, med
-          fysiske butikker flere steder i Skandinavia
-        </h2>
       </div>
       <OmOss />
     </main>

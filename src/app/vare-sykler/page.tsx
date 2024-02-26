@@ -3,9 +3,9 @@ import Products from "@/components/vare-sykler/Products";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Våre sykler - Elsykkel Trondheim",
+  title: "Våre sykler - Elsykkel Kristiansand",
   description:
-    "E-wheels er norges største forhandler av elektriske kjøretøy. Se vårt brede sortement av elsykler for dame og herre. Vi har elsykkel for en hver.",
+    "Utforsk vårt store utvalg av elsykler for både kvinner og menn. Vi har en elsykkel for enhver smak og behov.",
 };
 
 const Page = () => {
@@ -14,8 +14,8 @@ const Page = () => {
       <div className="title-block">
         <h1>Våre sykler</h1>
         <h2>
-          Her ser du noen av våre elsykler. E-Wheels fører kjente merker som
-          Momas, Avelo og Fosna.
+          I vårt sortement finner du blant annet våre egenproduserte sykler av
+          merkene Momas, Fosna og Avelo som flere ganger har vært best i test.
         </h2>
       </div>
       <Products />

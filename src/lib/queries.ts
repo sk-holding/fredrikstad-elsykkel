@@ -24,7 +24,7 @@ const featuredBikeQuery = `*[_type == "bikes" && featured] | order(_createdAt de
 }`
 
 const storeQuery = `
-*[_type == "stores" && slug.current == "pick-up-point-kristiansand"] {
+*[_type == "stores" && slug.current == "kajakk-and-fritid-kristiansand"] {
   storeName,
   storeAddress,
   "image": image.asset->url,

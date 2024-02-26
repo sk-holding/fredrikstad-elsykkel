@@ -1,12 +1,10 @@
 import { Metadata } from "next";
 import Butikker from "@/components/butikk/Butikker";
-import Stores from "@/components/shared/Stores";
-import { location } from "@/lib/locations";
 
 export const metadata: Metadata = {
-  title: "Butikk - Elsykkel Trondheim",
+  title: "Butikk - Elsykkel Kristiansand",
   description:
-    "Kom innom vår flotte butikk i Søndre gate 30 for en trivelig elsykkelprat. Våre dyktige medarbeidere står klare til å hjelpe deg.",
+    "I vår nyåpnede butikk i Kristiansand finner du et bredt sortement, med flere forskjellige elsykkelmerker. ",
 };
 
 const Page = () => {
@@ -15,8 +13,8 @@ const Page = () => {
       <div className="title-block">
         <h1>Våre butikker</h1>
         <h2>
-          E-Wheels har flere butikker i Norge, Sverige og Sveits. I Kristiansand
-          åpner vi dørene til et helt nytt pick-up point i løpet av 2024.
+          Vår nyåpnede butikk i Kristiansand byr på et enromt utvalg av
+          elsykler, og stor ekspertise fra våre ansatte.
         </h2>
       </div>
       <Butikker />

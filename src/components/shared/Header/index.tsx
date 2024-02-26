@@ -25,8 +25,6 @@ const Header = () => {
   const pathname = usePathname();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log(latest);
-
     if (latest > 0) {
       setHidden(true);
     } else {
@@ -45,7 +43,17 @@ const Header = () => {
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <p>Norges største leverandør av elsykkel</p>
+        <p>
+          Vi feirer 20-års jubileum!
+          <a
+            href="https://www.kajakk-fritid.no/salg"
+            target="_blank"
+            style={{ color: "#f76565" }}
+          >
+            {" "}
+            Se tilbudene her
+          </a>
+        </p>
       </motion.section>
       <motion.section
         className={styles.main}
@@ -54,7 +62,6 @@ const Header = () => {
             ? {
                 visible: {
                   height: "5rem",
-                  backgroundColor: `${pathname === "/" ? "transparent" : ""}`,
                 },
                 hidden: {
                   y: "-2rem",
@@ -73,12 +80,12 @@ const Header = () => {
           <Link href="/" className={styles.logo}>
             <motion.img
               variants={{
-                visible: { width: "12rem" },
-                hidden: { width: "8rem" },
+                visible: { width: "10rem" },
+                hidden: { width: "6rem" },
               }}
               animate={hidden ? "hidden" : "visible"}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              src="/images/logo.svg"
+              src="/images/logo.png"
               alt="E-Wheels Logo"
             />
           </Link>

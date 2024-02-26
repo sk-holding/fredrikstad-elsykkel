@@ -20,7 +20,7 @@ const ArticleCard: React.FC<Article> = (props) => {
           )}
         </div>
         <div>
-          <Link className="button button_secondary" href={props.url}>
+          <Link className="button button_primary" href={props.url}>
             {props.buttonText}
           </Link>
         </div>

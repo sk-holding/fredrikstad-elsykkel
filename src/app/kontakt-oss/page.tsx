@@ -3,9 +3,9 @@ import { Metadata } from "next";
 import Kontakt from "@/components/kontakt-oss/Kontakt";
 
 export const metadata: Metadata = {
-  title: "Kontakt - Elsykkel Trondheim",
+  title: "Kontakt - Elsykkel Kristiansand",
   description:
-    "Noe du lurer på angående elsykkel? Ta kontakt med oss eller se vårt servicesenter, hvor du finner flere gode tips for elsykkel",
+    "Har du spørsmål om elsykler? Ikke nøl med å kontakte oss eller besøke vårt servicesenter, der du vil finne en rekke nyttige tips om elsykler",
 };
 
 const Page = () => {
@@ -15,7 +15,7 @@ const Page = () => {
         <h1>Kontakt oss</h1>
         <h2>
           Noe du lurer på? Ta kontakt med oss eller sjekk ut vårt{" "}
-          <a href="https://www.e-wheels.no/kundeservice/">kundesenter</a>
+          <a href="https://www.kajakk-fritid.no/kontaktoss">kundesenter</a>
         </h2>
       </div>
       <Kontakt />

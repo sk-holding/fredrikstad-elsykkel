@@ -8,32 +8,46 @@ const OmOss = () => {
       <div>
         <h3>Vår historie</h3>
         <p>
-          E-Wheels Norge AS ble grunnlagt i 2014 og har vokst til å bli en av
-          Nordens ledende forhandlere av personlige elektriske kjøretøy. Med
-          over 150 000 fornøyde kunder har E-Wheels vært en pioner innen å gjøre
-          mikromobilitet tilgjengelig for alle. I samarbeid med E-Wheels Europe
-          AB leverer vi små elektriske kjøretøy til hele Skandinavia, Frankrike
-          og Sveits, og er stolte av å representere våre egne merkevarer,
-          E-Wheels E2S, Momas og Fosna, i tillegg til andre anerkjente merker
-          som Kaabo, Zero, Airwheel, Gotway, Joyor, og Kingsong.
+          Kajakk og Fritid ble grunnlagt i 2004 med en visjon om å tilby
+          førsteklasses utstyr for dem som elsker å utforske naturen gjennom
+          utendørsaktiviteter. Fra starten av har vi vært engasjert i å tilby et
+          bredt utvalg av produkter og tjenester samtidig som vi opprettholder
+          høye standarder for kvalitet og kundeservice.
         </p>
         <p>
-          Nylig har vi åpnet et nytt verksted i Kristiansand, hvor vi er klare
-          til å hjelpe deg med reparasjon og service av dine elektriske
-          kjøretøy.
+          Vi tilbyr et mangfoldig sortiment av utstyr for utendørsaktiviteter,
+          inkludert el-sykler, SUP-brett, kajakker og mye mer. Vårt utvalg er
+          nøye kuratert for å passe til alle ferdighetsnivåer, fra nybegynnere
+          til profesjonelle. Vi er overbevist om at ved å tilby det beste
+          utstyret til konkurransedyktige priser, kan vi bidra til å sikre at
+          våre kunder har en fantastisk opplevelse når de utforsker naturen og
+          alt vårt vakre land har å tilby.
         </p>
         <p>
-          Vår historie startet i Drammen i 2014, hvor vi som en av de første
-          aktørene i bransjen introduserte enhjulinger for det norske markedet.
-          Gjennom årene har E-Wheels tilpasset seg nye lovgivninger og trender,
-          og vi har nå blitt en av Nordens største forhandlere av
-          el-sparkesykler og el-sykler.
+          Vi holder kurs i kajakk ved pittoreske steder som Bygdøy sjøbad i
+          Oslo, samt utenfor vår butikk i Drammen. I tillegg tilbyr vi også kurs
+          for grupper innen SUP og Packraft. Våre instruktører er sertifiserte
+          med høyeste utdanning og sertifisering fra Norges padleforbund, og
+          kursene våre kvalifiserer for våttkort.
         </p>
         <p>
-          Vi forplikter oss til en grønn og bærekraftig fremtid, og vårt mål er
-          å fortsette å tilby deg det nyeste innen små elektriske kjøretøy.
-          Utforsk E-Wheels i Kristiansand i dag, og bli med oss på reisen mot en
-          fremtid med smart, bærekraftig og morsom mobilitet!
+          Vårt dedikerte team av ansatte er lidenskapelig opptatt av
+          utendørsaktiviteter og har omfattende erfaring som gjør oss i stand
+          til å veilede deg som kunde til å finne det perfekte utstyret for dine
+          behov. Vi forstår at hver kunde er unik, og vi legger stor vekt på å
+          tilby personlig service og rådgivning.
+        </p>
+        <p>
+          Opprinnelig var butikken vår i Drammen den eneste fysiske butikken,
+          men på grunn av økende etterspørsel har vi utvidet og åpnet flere
+          butikker. For øyeblikket har vi etablert oss i Drammen, Tønsberg,
+          Kristiansand og Stavanger, og vi ser frem til videre vekst. Vårt
+          hovedlager, kundeservice og administrasjon ligger i nærheten av
+          butikken vår i Drammen.
+        </p>
+        <p>
+          Vi ser frem til å hjelpe deg med å finne det ideelle utstyret for å
+          gjøre ditt neste utendørs eventyr minneverdig og morsomt.
         </p>
         <Link href="/vare-sykler" className="button button_primary">
           Se våre modeller

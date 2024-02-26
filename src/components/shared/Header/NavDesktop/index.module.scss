@@ -9,17 +9,16 @@
     }
 
     * {
-        color: var(--light-text);
+        color: var(--dark-text);
         transition: all .3s;
         
         &:hover {
-            color: var(--secondary-color);
-    
+            font-weight: 800;    
         }
     }
 
     .active {
-        color: var(--secondary-color);
+        font-weight: 800;
     }
 
 }

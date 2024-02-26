@@ -2,9 +2,14 @@
     position: fixed;
     z-index: 99;
     width: 100%;
+
+    a {
+        border: none;
+    }
     
     .banner {
-        background-color: var(--secondary-color);
+        color: var(--background-color);
+        background-color: var(--primary-color);
         text-align: center;
         justify-content: center;
         display: flex;
@@ -14,10 +19,11 @@
     }
     
     .main {
-        background-color: var(--primary-color);
+        background-color: var(--background-color);
         display: flex;
         justify-content: space-between;
         padding: 0 1rem;
+        box-shadow: 0 1px 4px 0 rgb(154, 154, 154);
 
         .container {
             max-width: var(--max-width);
@@ -29,6 +35,7 @@
 
             .logo {
                 border-bottom: none;
+                width: 10rem;
             }
         }
     }

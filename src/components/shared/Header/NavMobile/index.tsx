@@ -35,7 +35,7 @@ const NavMobile: React.FC<Props> = ({ navLinks }) => {
         label="Menu icon"
         toggled={isOpen}
         toggle={setOpen}
-        color="#fff"
+        color="#000"
       />
       <AnimatePresence>
         {isOpen && (

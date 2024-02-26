@@ -14,20 +14,16 @@ const useScreenSize = () => {
       });
     };
 
-    // Check if window is available before adding event listener
     if (typeof window !== 'undefined') {
-      // Trigger handleResize initially
       handleResize();
 
-      // Add event listener for window resize
       window.addEventListener('resize', handleResize);
 
-      // Cleanup the event listener when component unmounts
       return () => {
         window.removeEventListener('resize', handleResize);
       };
     }
-  }, []); // Empty dependency array means the effect runs only once after the initial render
+  }, []); 
 
   return screenSize;
 };

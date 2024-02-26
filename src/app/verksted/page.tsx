@@ -4,9 +4,9 @@ import { Metadata } from "next";
 import { location } from "@/lib/locations";
 
 export const metadata: Metadata = {
-  title: "Verksted - Elsykkel Trondheim",
+  title: "Verksted - Elsykkel Kristiansand",
   description:
-    "Våre dyktige mekanikere står klare til å hjelpe deg. Teknikerne våre har lang og god erfaring med elsykler",
+    "Våre erfarne mekanikere er klare til å hjelpe med elsykler. Kontakt oss for kvalitetsservice i dag!",
 };
 
 const Page = () => {
