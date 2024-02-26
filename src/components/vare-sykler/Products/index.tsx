@@ -25,7 +25,7 @@ const Products = async () => {
       </div>
       <div className="button_container">
         <a
-          href="https://www.e-wheels.no/elsykkel/"
+          href="https://www.kajakk-fritid.no/el-sykkel"
           className="button button_primary"
         >
           Se alle modeller

@@ -7,17 +7,7 @@
     
     .inner {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
+        max-width: 25rem;
     }
 }
 
-@media screen and (max-width: 850px) {
-    .wrapper {
-
-        .inner {
-            grid-template-columns: repeat(1, 1fr);
-
-        }
-    }
-}

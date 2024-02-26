@@ -11,7 +11,7 @@ const Kontakt = () => {
             <img src="/icons/phone.svg" alt="phone icon" />
             <a href="tel:004722020022">22 02 00 22</a>
           </div>
-          <p>Du når oss på telefon mandag - fredag mellom 10.00 og 14.00</p>
+          <p>Du når oss på telefon mandag - fredag mellom 10.00 og 14.00.</p>
         </div>
         <div className={styles.inner}>
           <h3>Mail</h3>

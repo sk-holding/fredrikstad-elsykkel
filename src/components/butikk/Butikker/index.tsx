@@ -22,6 +22,14 @@ const Butikker = async () => {
           );
         })}
       </div>
+      <div>
+        <a
+          href="https://www.kajakk-fritid.no/butikker"
+          className="button button_primary"
+        >
+          Se alle butikker
+        </a>
+      </div>
     </section>
   );
 };
