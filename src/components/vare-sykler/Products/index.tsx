@@ -18,7 +18,7 @@ const Products = async () => {
               title={bike.title}
               image={bike.image}
               description={bike.description}
-              url={bike.url}
+              kf_url={bike.kf_url}
             />
           );
         })}

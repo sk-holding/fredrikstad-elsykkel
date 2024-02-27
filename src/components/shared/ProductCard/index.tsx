@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 const ProductCard: React.FC<Bike> = (props) => {
   return (
-    <a href={props.url}>
+    <a href={props.kf_url}>
       <div className={styles.wrapper}>
         <img src={props.image} alt={props.title} />
         <div>

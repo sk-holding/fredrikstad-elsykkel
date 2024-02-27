@@ -3,7 +3,7 @@ const bikeQuery = `*[_type == "bikes"] | order(title asc) {
     "currentSlug": slug.current,
     description,
     "image": image.asset->url,
-    url
+    kf_url
 }`
 
 const featuredBikeQuery = `*[_type == "bikes" && featured] | order(_createdAt desc) {
@@ -11,7 +11,7 @@ const featuredBikeQuery = `*[_type == "bikes" && featured] | order(_createdAt de
     "currentSlug": slug.current,
     description,
     "image": image.asset->url,
-    url
+    kf_url
 }`
 
  const articleQuery = `

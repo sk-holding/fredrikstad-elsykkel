@@ -2,7 +2,7 @@ import { storeQuery } from "@/lib/queries";
 import { sanityFetch } from "@/functions/getData";
 import { Store } from "@/types";
 import styles from "./index.module.scss";
-import ProductCard from "@/components/shared/ProductCard";
+import Card from "@/components/shared/Stores/_components/Card";
 
 const Butikker = async () => {
   const query = storeQuery;
@@ -12,11 +12,11 @@ const Butikker = async () => {
       <div className={styles.inner}>
         {data.map((store: Store, idx: number) => {
           return (
-            <ProductCard
+            <Card
               key={idx}
-              title={store.storeName}
+              storeName={store.storeName}
               image={store.image}
-              description={store.storeAddress}
+              storeAddress={store.storeAddress}
               url={store.url}
             />
           );
