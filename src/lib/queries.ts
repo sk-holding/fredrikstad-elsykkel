@@ -15,7 +15,7 @@ const featuredBikeQuery = `*[_type == "bikes" && featured] | order(_createdAt de
 }`
 
  const articleQuery = `
-*[_type == "article" && kristiansand] | order(_createdAt desc) {
+*[_type == "article" && drammen] | order(_createdAt desc) {
   title,
   content,
   "image": image.asset->url,
@@ -24,7 +24,7 @@ const featuredBikeQuery = `*[_type == "bikes" && featured] | order(_createdAt de
 }`
 
 const storeQuery = `
-*[_type == "stores" && slug.current == "kajakk-and-fritid-kristiansand"] {
+*[_type == "stores" && slug.current == "kajakk-and-fritid-drammen"] {
   storeName,
   storeAddress,
   "image": image.asset->url,

@@ -12,41 +12,32 @@ const Hero = () => {
     <section className={styles.wrapper}>
       <div className={styles.content}>
         <div>
-          <h1>Utforsk sørlandet med våre kraftige elsykler</h1>
-          <h2>Kom innom oss i Kajakk & Fritid for en hyggelig sykkelprat</h2>
+          <h1>Ute etter elsykkel i Drammen?</h1>
+          <h2>
+            Kajakk og Fritid ble grunnlagt i 2004 med en visjon om å tilby
+            høykvalitets utstyr til de som elsker å utforske naturen gjennom
+            utendørsaktiviteter.
+          </h2>
         </div>
         <div className={styles.buttons}>
           <Link href="/vare-sykler" className="button button_tertiary">
-            Se våre modeller
+            Se våre Elsykler
           </Link>
-          <Link href="/vare-sykler" className="button button_secondary">
+          <Link href="/butikk" className="button button_secondary">
             Se butikk
           </Link>
         </div>
       </div>
-      {screenSize.width >= 750 ? (
-        <Image
-          src="/images/hero-image.webp"
-          alt="To personer står å prater med hver sin Fosna Elsykkel"
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "40%",
-          }}
-          priority
-        />
-      ) : (
-        <Image
-          src="/images/hero-image_mobile.webp"
-          alt="To personer står å prater med hver sin Fosna Elsykkel"
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "65%",
-          }}
-          priority
-        />
-      )}
+      <Image
+        src="/images/hero-image.webp"
+        alt="To personer står å prater med hver sin Fosna Elsykkel"
+        fill
+        style={{
+          objectFit: "cover",
+          objectPosition: "20%",
+        }}
+        priority
+      />
     </section>
   );
 };

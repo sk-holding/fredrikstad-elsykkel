@@ -6,9 +6,9 @@ import Articles from "@/components/home/Articles";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Elsykkel Kristiansand",
+  title: "Drammen Elsykkel",
   description:
-    "Utforsk vår store utvalg av elsykler i Kristiansand! Vi tilbyr en rekke elektriske sykler for enhver smak og behov. Fra bypendling til terrengeventyr, vårt sortiment har noe for alle.",
+    "Kajakk og Fritid ble grunnlagt i 2004 med en visjon om å tilby høykvalitets utstyr til de som elsker å utforske naturen gjennom utendørsaktiviteter.",
 };
 
 export const revalidate = 10;

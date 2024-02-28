@@ -1,15 +1,11 @@
 import { Article } from "@/types";
-import { sanityFetch } from "@/functions/getData";
 import ArticleCard from "@/components/shared/ArticleCard";
-import { articleQuery } from "@/lib/queries";
+import { articles } from "@/lib/articles";
 
 const ArticleCards = async () => {
-  const query = articleQuery;
-  const data = await sanityFetch(query);
-
   return (
     <div>
-      {data.map((article: Article, idx: number) => {
+      {articles.map((article: Article, idx: number) => {
         return (
           <ArticleCard
             key={idx}
