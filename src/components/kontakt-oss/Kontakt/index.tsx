@@ -35,13 +35,16 @@ const Kontakt = () => {
           <h3>Butikk</h3>
           <div className={styles.usp}>
             <img src="/icons/house.svg" alt="house icon" />
-            <a href="https://www.google.com/maps?ll=58.162616,8.071914&z=16&t=m&hl=no&gl=NO&mapclient=embed&q=S%C3%B8msveien+2a+4637+Kristiansand">
-              Sømsveien 2A, 4637 Kristiansand
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Kajakk+og+Fritid+AS/@59.74513,10.179806,14z/data=!4m6!3m5!1s0x46412347b027417f:0xf142e98ad882f9c4!8m2!3d59.7451301!4d10.1798057!16s%2Fg%2F1pxwqp8tb?hl=no&entry=ttu"
+            >
+              Nedre Eikervei 12, 3045 Drammen
             </a>
           </div>
           <p>
             Våre dyktige medarbeidere står klare til å ta deg i mot i vår flotte
-            nye butikk.
+            butikk.
           </p>
         </div>
       </div>

@@ -3,26 +3,16 @@
 import Link from "next/link";
 import styles from "./index.module.scss";
 import NavDesktop from "./NavDesktop";
-import { NavLink } from "@/types";
 import useScreenSize from "@/hooks/useScreenSize";
 import NavMobile from "./NavMobile";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
-
-const navLinks: NavLink[] = [
-  { name: "Våre sykler", href: "/vare-sykler" },
-  { name: "Butikk", href: "/butikk" },
-  { name: "Verksted", href: "/verksted" },
-  { name: "Om oss", href: "/om-oss" },
-  { name: "Kontakt", href: "/kontakt-oss" },
-];
+import { main } from "@/lib/menus";
 
 const Header = () => {
   const [hidden, setHidden] = useState(false);
   const screenSize = useScreenSize();
   const { scrollY } = useScroll();
-  const pathname = usePathname();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest > 0) {
@@ -90,9 +80,9 @@ const Header = () => {
             />
           </Link>
           {screenSize!.width >= 750 ? (
-            <NavDesktop navLinks={navLinks} />
+            <NavDesktop menu={main} />
           ) : (
-            <NavMobile navLinks={navLinks} />
+            <NavMobile menu={main} />
           )}
         </div>
       </motion.section>

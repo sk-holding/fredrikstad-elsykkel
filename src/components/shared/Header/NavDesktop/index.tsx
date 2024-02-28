@@ -1,18 +1,14 @@
 import Link from "next/link";
 import styles from "./index.module.scss";
 import { usePathname } from "next/navigation";
-import { NavLink } from "@/types";
+import { NavigationProps } from "@/types";
 
-interface Props {
-  navLinks: NavLink[];
-}
-
-const NavDesktop: React.FC<Props> = ({ navLinks }) => {
+const NavDesktop = ({ menu }: NavigationProps) => {
   const pathName = usePathname();
 
   return (
     <div className={styles.wrapper}>
-      {navLinks.map((link, idx) => {
+      {menu.map((link, idx) => {
         const isActive = pathName.startsWith(link.href);
         return (
           <Link

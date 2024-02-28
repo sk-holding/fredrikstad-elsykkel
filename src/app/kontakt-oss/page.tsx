@@ -5,7 +5,7 @@ import Kontakt from "@/components/kontakt-oss/Kontakt";
 export const metadata: Metadata = {
   title: "Kontakt - Elsykkel Kristiansand",
   description:
-    "Har du spørsmål om elsykler? Ikke nøl med å kontakte oss eller besøke vårt servicesenter, der du vil finne en rekke nyttige tips om elsykler",
+    "Vi er her for å støtte deg på veien til å finne den perfekte elsykkelen som passer dine behov og preferanser. Ikke nøl med å ta kontakt med oss eller besøke vårt servicesenter. ",
 };
 
 const Page = () => {

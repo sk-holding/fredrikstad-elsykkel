@@ -26,4 +26,9 @@ export interface Store {
 export interface NavLink {
     name: string;
     href: string;
-  }
+}
+
+export interface NavigationProps {
+    menu: NavLink[];
+    title?: string
+}

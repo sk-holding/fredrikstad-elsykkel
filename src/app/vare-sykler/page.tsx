@@ -3,9 +3,9 @@ import Products from "@/components/vare-sykler/Products";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Våre sykler - Elsykkel Kristiansand",
+  title: "Våre sykler - Drammen Elsykkel",
   description:
-    "Utforsk vårt store utvalg av elsykler for både kvinner og menn. Vi har en elsykkel for enhver smak og behov.",
+    "Oppdag det omfattende spekteret av elektriske sykler i vår kolleksjon, designet for både kvinner og menn. Vi tilbyr et bredt utvalg av elsykler som passer enhver smak og behov, slik at du kan finne den perfekte modellen for deg.",
 };
 
 const Page = () => {

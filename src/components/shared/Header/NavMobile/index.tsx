@@ -1,16 +1,12 @@
 import Hamburger from "hamburger-react";
 import { useEffect, useRef, useState } from "react";
 import styles from "./index.module.scss";
-import { NavLink } from "@/types";
+import { NavigationProps } from "@/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
-interface Props {
-  navLinks: NavLink[];
-}
-
-const NavMobile: React.FC<Props> = ({ navLinks }) => {
+const NavMobile = ({ menu }: NavigationProps) => {
   const pathName = usePathname();
   const [isOpen, setOpen] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement | null>(null);
@@ -46,7 +42,7 @@ const NavMobile: React.FC<Props> = ({ navLinks }) => {
             transition={{ duration: 0.2 }}
             className={styles.links}
           >
-            {navLinks.map((link, idx) => {
+            {menu.map((link, idx) => {
               const isActive = pathName.startsWith(link.href);
               return (
                 <motion.li

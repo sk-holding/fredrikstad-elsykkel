@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import styles from "./index.module.scss";
+import Navigation from "./_components/Navigation";
+import { main, support } from "@/lib/menus";
 
 const Footer = () => {
   return (
@@ -21,49 +22,8 @@ const Footer = () => {
               høye standarder for kvalitet og kundeservice.
             </p>
           </div>
-          <div>
-            <h4>Info</h4>
-            <ul>
-              <li>
-                <Link href="/vare-sykler">Våre sykler</Link>
-              </li>
-              <li>
-                <Link href="/om-oss">Om oss</Link>
-              </li>
-              <li>
-                <Link href="/butikk">Butikk</Link>
-              </li>
-              <li>
-                <Link href="/verksted">Verksted</Link>
-              </li>
-              <li>
-                <Link href="/kontakt-oss">Kontakt</Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4>Kontakt oss</h4>
-            <ul>
-              <li>
-                <Link href="https://www.kajakk-fritid.no/kontaktoss">
-                  Kundeservice
-                </Link>
-              </li>
-              <li>
-                <Link href="tel:004722020022">22 02 00 22</Link>
-              </li>
-              <li>
-                <Link href="https://kajakk-fritid.zendesk.com/hc/no">
-                  Ofte stilte spørsmål
-                </Link>
-              </li>
-              <li>
-                <Link href="https://kajakk-fritid.zendesk.com/hc/no/articles/11670083912733-Teknisk-hjelp-el-sykkel">
-                  Teknisk hjelp
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <Navigation menu={main} title="Info" />
+          <Navigation menu={support} title="Kontakt oss" />
         </div>
       </div>
       <div className={styles.footer}>
