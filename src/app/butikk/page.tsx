@@ -13,8 +13,8 @@ const Page = () => {
       <div className="title-block">
         <h1>Våre butikker</h1>
         <h2>
-          Vår butikk i Kristiansand byr på et enromt utvalg av elsykler, og stor
-          ekspertise fra våre ansatte.
+          Siden 2004 har butikken vår i Drammen bydd på et enormt utvalg av
+          elsykler, og en stor ekspertise fra våre ansatte.
         </h2>
       </div>
       <Butikker />
