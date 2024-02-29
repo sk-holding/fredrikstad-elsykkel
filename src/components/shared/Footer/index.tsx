@@ -12,9 +12,9 @@ const Footer = () => {
           <div>
             <img src="/images/logo_white.png" alt="E-Wheels logo" />
             <p>
-              Kajakk og Fritid så dagens lys i 2004 med en klar visjon om å
-              tilby førsteklasses utstyr for de som har en lidenskap for å
-              utforske naturen gjennom utendørsaktiviteter.
+              Kajakk og Fritid har siden 2004 levert kvalitetsutstyr til folk i
+              hele Norge. Nå har vi åpnet Norges kanskje råeste butikk i
+              Fredrikstad.
             </p>
             <p>
               Fra starten har selskapet vært dedikert til å tilby et omfattende

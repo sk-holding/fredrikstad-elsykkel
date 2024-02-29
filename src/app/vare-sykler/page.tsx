@@ -3,9 +3,9 @@ import Products from "@/components/vare-sykler/Products";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Våre sykler - Drammen Elsykkel",
+  title: "Våre sykler - Fredrikstad Elsykkel",
   description:
-    "Oppdag det omfattende spekteret av elektriske sykler i vår kolleksjon, designet for både kvinner og menn. Vi tilbyr et bredt utvalg av elsykler som passer enhver smak og behov, slik at du kan finne den perfekte modellen for deg.",
+    "Oppdag vårt varierte sortiment, inkludert våre prisvinnende egenproduserte sykler fra merkene Momas, Fosna og Avelo, kjent for å være best i test flere ganger.",
 };
 
 const Page = () => {
@@ -14,8 +14,9 @@ const Page = () => {
       <div className="title-block">
         <h1>Våre sykler</h1>
         <h2>
-          I vårt sortement finner du blant annet våre egenproduserte sykler av
-          merkene Momas, Fosna og Avelo som flere ganger har vært best i test.
+          Utforsk vårt mangfoldige utvalg, inkludert våre førsteklasses
+          egenproduserte sykler fra Momas, Fosna og Avelo - flere ganger kåret
+          til best i test.
         </h2>
       </div>
       <Products />

@@ -8,25 +8,24 @@ const OmOss = () => {
       <div>
         <h3>Vår historie</h3>
         <p>
-          Kajakk og Fritid ble grunnlagt i 2004 med en lidenskap for å tilby
-          enestående utstyr for friluftsentusiaster som elsker å utforske
-          naturen. Vår visjon har alltid vært å levere et bredt spekter av
-          produkter og tjenester av høy kvalitet, samtidig som vi opprettholder
-          et sterkt fokus på kundetilfredshet.
+          Med røtter tilbake til 2004, ble Kajakk og Fritid grunnlagt med en
+          lidenskap for å tilby førsteklasses utstyr til friluftsentusiaster som
+          elsker å utforske naturen. Vår visjon har alltid vært tydelig: å
+          levere et bredt spekter av høykvalitetsprodukter og tjenester samtidig
+          som vi prioriterer kundetilfredshet.
         </p>
         <p>
-          Vi tilbyr et variert utvalg av utstyr for utendørsaktiviteter,
-          inkludert el-sykler, SUP-brett, kajakker og mer. Vårt sortiment er
-          nøye kuratert for å imøtekomme behovene til alle, uavhengig av
-          erfaring eller ferdighetsnivå. Vi tror på å tilby det beste utstyret
-          til konkurransedyktige priser for å sikre at våre kunder har en
-          uforglemmelig opplevelse når de utforsker naturen og alt det den har å
-          tilby.
+          Vi er stolte av å tilby et mangfoldig utvalg av utstyr for
+          utendørsaktiviteter, fra el-sykler til SUP-brett og kajakker, nøye
+          kuratert for å imøtekomme behovene til alle, uavhengig av erfaring
+          eller ferdighetsnivå. Vår overbevisning om å tilby det beste utstyret
+          til konkurransedyktige priser sikrer at våre kunder har uforglemmelige
+          opplevelser når de utforsker naturen og alt den har å tilby.
         </p>
         <p>
           Vårt dedikerte team av ansatte deler en felles lidenskap for
-          friluftsliv og har omfattende ekspertise som gjør oss i stand til å
-          veilede våre kunder til å finne det perfekte utstyret for deres
+          friluftsliv og besitter omfattende ekspertise som gjør oss i stand til
+          å veilede våre kunder til å finne det perfekte utstyret for deres
           eventyr. Vi setter stor pris på den personlige servicen vi tilbyr og
           streber etter å gjøre hvert besøk til en positiv opplevelse for våre
           kunder.
@@ -40,9 +39,14 @@ const OmOss = () => {
           nærheten av vår butikk i Drammen for å sikre en smidig drift.
         </p>
         <p>
-          Vi ser frem til å hjelpe deg med å gjøre ditt neste utendørs eventyr
-          til en minneverdig og spennende opplevelse!
+          Februar 2024 markerer begynnelsen på en ny epoke for Kajakk & Fritid.
+          Vi er stolte av vår nye butikk i Østfoldhallene, men enda mer spent på
+          reisen som ligger foran oss. Sammen med våre kunder ser vi frem til å
+          utforske naturen, skape minner og dele lidenskapen for det store
+          utendørs.
         </p>
+        <p>Velkommen til Kajakk & Fritid - hvor eventyret begynner!</p>
+
         <Link href="/vare-sykler" className="button button_primary">
           Se våre elsykler
         </Link>

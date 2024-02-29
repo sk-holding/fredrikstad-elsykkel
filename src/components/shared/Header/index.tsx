@@ -34,14 +34,14 @@ const Header = () => {
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <p>
-          Vi feirer 20-års jubileum!
+          Kajakk & Fritid feirer 20 år!
           <a
             href="https://www.kajakk-fritid.no/salg"
             target="_blank"
             style={{ color: "#f76565" }}
           >
             {" "}
-            Se tilbudene her
+            Se våre tilbud
           </a>
         </p>
       </motion.section>

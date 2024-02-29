@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import Butikker from "@/components/butikk/Butikker";
 
 export const metadata: Metadata = {
-  title: "Butikk - Drammen Elsykkel",
+  title: "Butikk - Fredrikstad Elsykkel",
   description:
-    "I vår butikk i Drammen finner du et bredt sortement, med flere forskjellige elsykkelmerker. ",
+    "I vår nyåpnede butikk i Fredrikstad finner du et bredt sortement, med en elsykkel for en hver ",
 };
 
 const Page = () => {
@@ -13,8 +13,9 @@ const Page = () => {
       <div className="title-block">
         <h1>Våre butikker</h1>
         <h2>
-          Siden 2004 har butikken vår i Drammen bydd på et enormt utvalg av
-          elsykler, og en stor ekspertise fra våre ansatte.
+          Vår flotte nye butikk i Østfoldhallene åpnet dørene i 2024. I
+          flunkende nye lokaler står vi nå klare til å ta imot deg for en
+          trivelig elsykkelprat.
         </h2>
       </div>
       <Butikker />

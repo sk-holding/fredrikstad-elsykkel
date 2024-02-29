@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import OmOss from "@/components/om-oss/OmOss";
 
 export const metadata: Metadata = {
-  title: "Om oss - Drammen Elsykkel",
+  title: "Om oss - Fredrikstad Elsykkel",
   description:
-    "I 2004 ble Kajakk og Friluft etablert med en visjon om å tilby førsteklasses utstyr til naturinteresserte som elsker å utforske det store utendørs.",
+    "Med røtter tilbake til 2004 har Kajakk & FRitid levert høykvalitets utstyr til folk i hele Norge.",
 };
 
 const Page = () => {

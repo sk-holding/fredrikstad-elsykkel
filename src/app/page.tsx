@@ -6,9 +6,9 @@ import Articles from "@/components/home/Articles";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Drammen Elsykkel",
+  title: "Fredrikstad Elsykkel",
   description:
-    "Kajakk og Fritid ble grunnlagt i 2004 med en visjon om å tilby høykvalitets utstyr til de som elsker å utforske naturen gjennom utendørsaktiviteter.",
+    "Februar 2024 åpnet Kajakk & Fritid dørene til vår så langt største og råeste butikk i Østfoldhallene i Fredrikstad",
 };
 
 export const revalidate = 10;

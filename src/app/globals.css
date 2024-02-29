@@ -9,6 +9,7 @@
     --light-gray-text: #cccccc;
     --gray-text: #525252;
     --dark-text: var(--primary-color);
+    --active-link: rgb(133, 16, 0);
 
     --max-width: 1200px;
 }
@@ -118,12 +119,12 @@ img {
 }
 
 .button_secondary {
-    background-color: var(--primary-color);
-    color: var(--light-text);
-
+    color: var(--dark-text);
+    background-color: var(--background-color);
+    
     &:hover {
-        color: var(--dark-text);
-        background-color: var(--background-color);
+        color: var(--light-text);
+        background-color: var(--primary-color);
     }
 }
 
@@ -155,10 +156,4 @@ img {
         font-size: 1.1rem;
         margin-top: 0.5rem;
     }
-}
-
-/* Active navigation link */
-
-.active {
-    color: var(--secondary-color);
 }

@@ -12,11 +12,10 @@ const Hero = () => {
     <section className={styles.wrapper}>
       <div className={styles.content}>
         <div>
-          <h1>Ute etter elsykkel i Drammen?</h1>
+          <h1>Ser du etter elsykkel i Fredrikstad?</h1>
           <h2>
-            Kajakk og Fritid ble grunnlagt i 2004 med en visjon om å tilby
-            høykvalitets utstyr til de som elsker å utforske naturen gjennom
-            utendørsaktiviteter.
+            Vi har akkurat åpnet dørene til Norges råeste elsykkelbutikk i
+            Østfoldhallene. Kom innom oss å finn ditt nye eventyr!
           </h2>
         </div>
         <div className={styles.buttons}>
@@ -30,7 +29,7 @@ const Hero = () => {
       </div>
       <Image
         src="/images/hero-image.webp"
-        alt="To personer står å prater med hver sin Fosna Elsykkel"
+        alt="Innsiden av Kajakk & Fritids butikk i Fredrikstad"
         fill
         style={{
           objectFit: "cover",

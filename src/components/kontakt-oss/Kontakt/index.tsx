@@ -1,3 +1,4 @@
+import { location } from "@/lib/locations";
 import styles from "./index.module.scss";
 
 const Kontakt = () => {
@@ -35,11 +36,8 @@ const Kontakt = () => {
           <h3>Butikk</h3>
           <div className={styles.usp}>
             <img src="/icons/house.svg" alt="house icon" />
-            <a
-              target="_blank"
-              href="https://www.google.com/maps/place/Kajakk+og+Fritid+AS/@59.74513,10.179806,14z/data=!4m6!3m5!1s0x46412347b027417f:0xf142e98ad882f9c4!8m2!3d59.7451301!4d10.1798057!16s%2Fg%2F1pxwqp8tb?hl=no&entry=ttu"
-            >
-              Nedre Eikervei 12, 3045 Drammen
+            <a target="_blank" href={location.butikk}>
+              Dikeveien 21B, 1661 Rolvsøy
             </a>
           </div>
           <p>

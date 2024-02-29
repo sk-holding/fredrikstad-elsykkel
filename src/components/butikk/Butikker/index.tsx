@@ -1,12 +1,13 @@
 import { storeQuery } from "@/lib/queries";
-import { sanityFetch } from "@/functions/getData";
+import { sanityFetch } from "@/lib/client";
 import { Store } from "@/types";
-import styles from "./index.module.scss";
 import Card from "@/components/shared/Stores/_components/Card";
+import styles from "./index.module.scss";
 
 const Butikker = async () => {
   const query = storeQuery;
-  const data = await sanityFetch(query);
+  const data = await sanityFetch<Store>({ query, tags: ["stores"] });
+
   return (
     <section className={styles.wrapper}>
       <div className={styles.inner}>

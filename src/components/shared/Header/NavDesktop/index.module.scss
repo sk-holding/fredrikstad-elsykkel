@@ -13,12 +13,12 @@
         transition: all .3s;
         
         &:hover {
-            font-weight: 800;    
+            color: var(--active-link);
         }
     }
-
+    
     .active {
-        font-weight: 800;
+        color: var(--active-link);
+        font-weight: 800;    
     }
-
 }
