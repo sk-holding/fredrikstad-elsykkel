@@ -12,14 +12,14 @@ const Footer = () => {
           <div>
             <img src="/images/logo_white.png" alt="E-Wheels logo" />
             <p>
-              Kajakk og Fritid ble grunnlagt i 2004 med en visjon om å tilby
-              høykvalitets utstyr til de som elsker å utforske naturen gjennom
-              utendørsaktiviteter.
+              Kajakk og Fritid så dagens lys i 2004 med en klar visjon om å
+              tilby førsteklasses utstyr for de som har en lidenskap for å
+              utforske naturen gjennom utendørsaktiviteter.
             </p>
             <p>
-              Fra begynnelsen av har vi hatt et sterkt fokus på å tilby et bredt
-              spekter av produkter og tjenester, samtidig som vi opprettholder
-              høye standarder for kvalitet og kundeservice.
+              Fra starten har selskapet vært dedikert til å tilby et omfattende
+              utvalg av produkter og tjenester samtidig som det opprettholder en
+              urokkelig standard for kvalitet og kundeservice.
             </p>
           </div>
           <Navigation menu={main} title="Info" />
