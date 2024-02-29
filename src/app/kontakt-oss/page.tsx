@@ -5,7 +5,7 @@ import Kontakt from "@/components/kontakt-oss/Kontakt";
 export const metadata: Metadata = {
   title: "Kontakt - Fredrikstad Elsykkel",
   description:
-    "Vi er her for å støtte deg på veien til å finne den perfekte elsykkelen som passer dine behov og preferanser. Ikke nøl med å ta kontakt med oss eller besøke vårt servicesenter. ",
+    "Vi er her for å støtte deg på veien til å finne den perfekte elsykkelen, som passer dine behov og preferanser. Ikke nøl med å ta kontakt med oss eller besøke vårt servicesenter. ",
 };
 
 const Page = () => {
