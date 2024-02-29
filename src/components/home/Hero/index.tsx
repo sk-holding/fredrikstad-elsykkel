@@ -27,16 +27,27 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <Image
-        src="/images/hero-image.webp"
-        alt="Innsiden av Kajakk & Fritids butikk i Fredrikstad"
-        fill
-        style={{
-          objectFit: "cover",
-          objectPosition: "20%",
-        }}
-        priority
-      />
+      {screenSize.width >= 770 ? (
+        <Image
+          src="/images/hero-image.webp"
+          alt="Innsiden av Kajakk & Fritids butikk i Fredrikstad"
+          fill
+          style={{
+            objectFit: "cover",
+          }}
+          priority
+        />
+      ) : (
+        <Image
+          src="/images/hero-image_mobile.webp"
+          alt="Innsiden av Kajakk & Fritids butikk i Fredrikstad"
+          fill
+          style={{
+            objectFit: "cover",
+          }}
+          priority
+        />
+      )}
     </section>
   );
 };
