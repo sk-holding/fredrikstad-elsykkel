@@ -4,7 +4,7 @@ import OmOss from "@/components/om-oss/OmOss";
 export const metadata: Metadata = {
   title: "Om oss - Fredrikstad Elsykkel",
   description:
-    "Med røtter tilbake til 2004 har Kajakk & FRitid levert høykvalitets utstyr til folk i hele Norge.",
+    "Med røtter tilbake til 2004 har Kajakk & Fritid levert høykvalitets utstyr til folk i hele Norge.",
 };
 
 const Page = () => {
